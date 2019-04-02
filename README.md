@@ -9,6 +9,12 @@ Aquí se encuentran hospedadas diversas herramientas que serán utilizadas en el
 * **Fecha**: martes 9 de abril de 16:00 a 18:00-19:00.
 * **Aula**: aula P1 (primera planta), edificio Ramón y Cajal.
 
+## Clonar repositorio
+Para clonar este repositorio, copia y pega en una ventana de la terminal el siguiente comando:
+```
+$ git clone git@github.com:jesusrp98/taller-flutter.git
+```
+
 ## Herramientas
 Éstas son las herramientas necesarias para trabajar con Flutter en un entorno GNU+Linux.
 * [**Android Studio & SDK**](https://developer.android.com/studio/install#linux): necesario para instalar el SDK de Android, y poder construir aplicaciones para este sistema operativo.
