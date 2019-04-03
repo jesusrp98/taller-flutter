@@ -1,23 +1,30 @@
 import 'package:flutter/material.dart';
 
+/// ESTA ES UNA APLICACION DE EJMPLO CONSTRUIDA EN FLUTTER.
+/// SERVIRÁ COMO PLANTILLA PARA EL TALLER DE FLUTTER DEL ASL 2019.
+
+// Funcion 'main' principal del programa, es la primera que se ejecuta.
+// Como sólo hace una accion, podemos usar la flecha (=>).
+//
+// Código equivalente:
+// void main() {
+//   runApp(MyApp());
+// }
 void main() => runApp(MyApp());
 
+// MyApp es una clase de tipo widget que construye nuestra aplicacion.
+// Devuelve un objeto 'MaterialApp', que construye una aplicacion con el tema
+// 'Material Design' de Google.
+// [title]: Título de la aplicación para el sistema.
+// [theme]: Objeto de tipo 'Theme' que devuelve un tema la aplicacion.
+//    En este caso, el tema principal de la app será azul.
+// [home]: Página de inicio. Este parámetro será de tipo widget.
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
@@ -25,45 +32,28 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// La clase HomePage devuelve otro widget.
+// Éste será la página principal de nuestra aplicacion.
+// El objeto 'Scaffold' construye una ventana con la que el usuario podrá interactuar.
+// [appBar]: Barra superior de la aplicación. Será de color azul. También es un widget.
+// [body]: El cuerpo principal de nuestra ventana. Tiene un hijo, en este caso un objeto 'Center'.
+// Éste widget recibirá otro widget, el cual colocará en el centro de la ventana.
+// El hijo será un objeto columna, que sólo tiene un hijo de tipo Text.
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text('Hello World!'),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
         child: Column(
-          // Column is also layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("I'm a sample Text widget. Woah!"),
           ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
