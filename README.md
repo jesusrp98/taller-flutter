@@ -23,6 +23,13 @@ $ git clone git@github.com:jesusrp98/taller-flutter.git
 
 También existen métodos para instalar las herramientas necesarias en sistemas operativos propietarios.
 
+¡No se olvide de instalar el plugin necesario para poder ejecutar Flutter en Android Studio, o su IDE preferido!
+
+Una vez instalado todo, se puede comprobar si está todo bien instalado ejecutando este comando:
+```
+$ flutter doctor
+```
+
 ## Ejemplos
 En este repositorio se encuentran diversos ejemplos, que servirán de ayuda para comprender conceptos básicos de Flutter.
 * **Layout**: Este ejemplo muestra cómo se pueden manejar diversos widgets de layout, como pueden ser 'Rows' y 'Columns'. También se muestra cómo se anidan unos dentro de otros.
