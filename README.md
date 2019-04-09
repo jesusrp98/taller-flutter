@@ -42,7 +42,7 @@ En este repositorio se encuentran diversos ejemplos, que servirán de ayuda para
 Se puede usar [este](https://github.com/jesusrp98/taller-flutter/tree/master/taller_plantilla) proyecto básico de Flutter durante la realización del taller, así como unos posteriores primeros pasos.
 
 ## Presentación
-Enlace de la presentación todavía no disponible.
+En este repositorio podéis encontrar la [presentacion](https://github.com/jesusrp98/taller-flutter/tree/master/presentation.pdf) usada en el taller (formato PDF).
 
 ## Menciones
 Gracias al Aula de Software Libre, y en especial a Sergio Gómez, por hacer este taller posible :)
