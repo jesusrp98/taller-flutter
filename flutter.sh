@@ -2,7 +2,7 @@
 echo -e "=======DOWNLOAD FLUTTER SDK=======\n"
 
 # Downloads the compressed file to /tmp
-wget -O /tmp/flutter.tar.xz 'https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.2.1-stable.tar.xz'
+wget -O /tmp/flutter.tar.xz 'https://storage.googleapis.com/flutter_infra/releases/beta/linux/flutter_linux_v1.14.6-beta.tar.xz'
 
 # Extract the folder from the .tar.xz file
 tar xf /tmp/flutter.tar.xz -C $HOME
