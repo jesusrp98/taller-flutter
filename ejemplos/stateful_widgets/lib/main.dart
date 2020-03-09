@@ -23,8 +23,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  /// Variable que registrara el número de veces que se pulsa el boton
   int _counter = 0;
 
+  // Metodo que incrementa el valor de la varaible `_counter`
   void _incrementCounter() => setState(() => _counter++);
 
   @override

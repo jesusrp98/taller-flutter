@@ -23,7 +23,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  num num1 = 0, num2 = 0, result = 0;
+  /// Este es el primer numero del calculo
+  num num1 = 0;
+
+  /// Este es el segundo numero del calculo
+  num num2 = 0;
+
+  /// Este es el resultado final
+  num result = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -33,20 +40,25 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Padding(
+        // Se establece un espacio alrededor de los elementos de la interfaz de tamaño 16
         padding: EdgeInsets.all(16),
+        // Todos los elementos hijo de la columna de estableceran de arriba a abajo
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // Este texto muestra el resultado final
             Text(
               'Resultado: $result',
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
+            // Campo de texto que establece el valor del primer numero
             TextField(
               keyboardType: TextInputType.number,
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 23),
               onChanged: (string) => num1 = int.parse(string),
             ),
+            // Campo de texto que establece el valor del segundo numero
             TextField(
               keyboardType: TextInputType.number,
               textAlign: TextAlign.center,
@@ -54,6 +66,7 @@ class _HomePageState extends State<HomePage> {
               onChanged: (string) => num2 = int.parse(string),
             ),
             SizedBox(height: 20),
+            // Esta vista se encarga de realizar la operación indicada por el usuario
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
